@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Class Activities</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to Class Activities</h1>
+    <div class="buttons">
+      <button onclick="location.href='stocks.html'">Stocks</button>
+      <button onclick="location.href='dogs.html'">Dogs</button>
+    </div>
+    <div id="quote-container"></div>
+  </main>
+
+  <div class="audio-controls">
+    <h2>Voice Commands</h2>
+    <p>Say: "Hello", "Change the color to blue", "Navigate to dogs"</p>
+    <button onclick="startListening()">Turn On Audio</button>
+    <button onclick="stopListening()">Turn Off Audio</button>
+  </div>
+
+
+</body>
+</html>
